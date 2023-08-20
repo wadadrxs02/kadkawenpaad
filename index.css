@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  height: -webkit-fill-available;
+  background: #a19d96;
+  font-family: "Quicksand", sans-serif;
+  background-size: cover;
+  padding: 0;
+}
+
+.main_frame {
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .size_frame {
+    width: 28% !important;
+    height: 100vh !important;
+    height: -webkit-fill-available;
+    text-align: center !important;
+  }
+}

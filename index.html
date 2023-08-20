@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML Meta Tags -->
+    <title>Walimatul Urus Ainaa | Faheem </title>
+    <meta name="description" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://ainaafaheem.kahwin.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Walimatul Urus Ainaa | Faheem ">
+    <meta property="og:image" content="http://ainaafaheem.kahwin.me/images/covers/girl.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="ainaafaheem.kahwin.me">
+    <meta property="twitter:url" content="http://ainaafaheem.kahwin.me/">
+    <meta name="twitter:title" content="Walimatul Urus Ainaa | Faheem ">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://ainaafaheem.kahwin.me/images/covers/girl.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset utf="8">
+    <script src="jquery.nicescroll.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--component-css-->
+    <link rel="icon" href="images/icons/rings.png">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .modal-container {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_frame">
+        <iframe src="home.html" style="width:100vw;height:100vh" class="size_frame"></iframe>
+        <div class="modal-container" id="modal-covid" onclick="hideModal();" onscroll="hideModal();">
+        </div>
+    </div>
+    <!--=========================================START MODAL RSVP==================================================-->
+
+    <div class="modal fade" id="ModalRSVP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalRSVPTitle">RSVP Walimatul Urus</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="instruction"><b>Sila jawab kehadiran anda di bawah dan memilih slot masa
+                            kehadiran anda SEBELUM <br> 1 Disember 2022. <br> </b> </p>
+                    <hr>
+                    <p class="instruction"><b> Please respond to your presence below and select the slot you
+                            would like to attend BEFORE 1 December 2022.
+                        </b> </p>
+                    <hr>
+                    <form name="rsvpform" method="post" id="sheetdb-form"
+                        action="https://sheetdb.io/api/v1/6s11bipbxhmnr">
+                        <div class="form-group rsvpform">
+                            <label for="kedatangan">Kehadiran:</label>
+                            <select class="form-control" id="kedatangan" name="data[kedatangan]" class="form-control"
+                                required>
+                                <option value="">Pilih Hadir atau Tidak</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak">Tidak Hadir</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group rsvpform" id="namaform">
+                            <label>Nama:</label>
+                            <input type="name" class="form-control" placeholder="Sila Isi Nama Anda" name="data[nama]"
+                                id="nama" required>
+                        </div>
+                        <div class="form-group" id="jumlahkedatanganform">
+                            <label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
+                            </label>
+                            <select class="form-control" name="data[jumlah]">
+                                <option value="">Sila Pilih Jumlah Kedatangan Anda</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+                        </div>
+                        <div id="showcalendar">
+                            <p style='text-align: center;'>Tambah di Kalendar</p>
+                            <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=Walimatul+Urus+Ainaa+%26+Faheem&location=Calandra+D%E2%80%99Astaka+%0ABukit+Jelutong&dates=20221211T030000Z%2F20221210T200000Z'
+                                target="_blank">
+
+                                <img style='width: 40%;' src='images/button/GoogleCalendar.svg' class="imgcenter"></a>
+
+                        </div> <br>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit">Hantar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================START MODAL RSVP==================================================-->
+
+
+    <!--=========================================START Modal Contact==================================================-->
+
+    <div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hubungi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Zul
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+6017-3805392" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/uaheke" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Yan
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+6016-4185010" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/5p06ep" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Ainaa
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+6017-6198410" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/ib1jvf" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--=========================================END Modal Contact==================================================-->
+
+    <!--================================START Modal Map===========================================================-->
+
+    <div class="modal fade" id="ModalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lokasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Google Map Copied Code -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.967411802195!2d101.54450061110386!3d3.103314653418502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d18b837a5e3%3A0x5ed62ba7ee74b45!2sCalandra%20D%E2%80%99Astaka%20Jelutong!5e0!3m2!1sen!2smy!4v1668177855748!5m2!1sen!2smy"
+                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="gridcontainer2">
+                        <div class="griditem2">
+                            <a href="https://waze.com/ul/hw281wubq4" target="_blank">
+                                <img src="images/button/waze.svg" alt="" width="150px"><br>
+                            </a>
+                        </div>
+                        <div class="griditem2">
+                            <a href="https://goo.gl/maps/Py7n9zhYE5EYSaMt5" target="_blank">
+                                <img src="images/button/googlemap.svg" alt="" width="150px"> <br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================================END Modal Map===========================================================-->
+
+    <!--============END TIMER================-->
+    <!-- toolbar bottom -->
+    <footer class="toolbar">
+        <ul class="toolbar-bottom toolbar-wrap">
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalRSVP">
+                    <i class="fas fa-envelope-open fa-2x"></i>
+                    RSVP
+                </button>
+            </li>
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalContact">
+                    <i class="fas fa-phone fa-2x"></i>
+                    CONTACT
+                </button>
+            </li>
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalMap">
+                    <i class="fas fa-map-marked-alt fa-2x"></i>
+                    LOCATION
+                </button>
+            </li>
+        </ul>
+    </footer>
+    <!-- end toolbar bottom -->
+</body>
+<!-- Optional JavaScript -->
+<script src="https://kit.fontawesome.com/a165d3b8d1.js" crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script>
+    function play() {
+        let audio = new Audio("https://ainaafaheem.kahwin.me/ainaa_song.mp3");
+        audio.play();
+    }
+    function hideModal() {
+        const modal = document.getElementById('modal-covid')
+        modal.classList.add('hide')
+        play()
+    }
+</script>
+
+</html>
