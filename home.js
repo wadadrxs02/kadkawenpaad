@@ -1,5 +1,5 @@
 function updateTimer() {
-  future = Date.parse("dec 11, 2022 11:00:00");
+  future = Date.parse("dec 30, 2023 11:30:00");
   now = new Date();
   diff = future - now;
 
@@ -29,5 +29,5 @@ function updateTimer() {
 }
 setInterval("updateTimer()", 1000);
 
-var aud = document.getElementById("myAudio");
-aud.volume = 0.1;
+// var aud = document.getElementById("myAudio");
+// aud.volume = 0.1;
