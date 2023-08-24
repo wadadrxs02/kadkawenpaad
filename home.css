@@ -118,7 +118,7 @@
 }
 
 .modal-header {
-  background-color: #a19d96;
+  background-color: #d5425d;
 }
 
 .buttonhadir {
@@ -323,7 +323,7 @@
   font-size: 2.5em;
   font-weight: 100;
   color: #d5425d;
-  text-shadow: 0 0 20px #a19d96;
+  text-shadow: 0 0 20px #d5425d;
 }
 
 #timer div {
@@ -342,7 +342,7 @@
     position: relative;
     width: 70vmin;
     height: 70vmin;
-    background: #a19d96;
+    background: #d5425d;
     -webkit-clip-path: polygon(
       50% 0%,
       83% 12%,
@@ -435,7 +435,7 @@ body {
   height: -webkit-fill-available;
 }
 .btn-primary {
-  background-color: #a19d96 !important;
+  background-color: #d5425d !important;
   border: 0;
   color: #000000;
 }
